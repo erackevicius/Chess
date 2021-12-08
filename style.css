@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 10px;
+}
+h1	{
+	padding: 50px 0px 30px 30px;
+}
+table {
+	border-spacing: 30px;
+}
+td {
+	border: 5px solid green;	
+	padding: 30px;
+	background: orange;
+	align-items: center;	
+}
+td:nth-child(odd) {
+	border: 5px solid orange;	
+	padding: 30px;
+	background: green;
+	align-items: center;
+}
+div:nth-of-type {
+	width: 50px;
+	height: 50px;
+	background: green;
+}	
+div:nth-of-type(odd) {
+	width: 50px;
+	height: 50px;
+	background: orange;
+}
