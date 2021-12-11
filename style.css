@@ -9,27 +9,38 @@ h1	{
 	padding: 50px 0px 30px 30px;
 }
 table {
-	border-spacing: 30px;
+	border-spacing: 20px;
+	margin: 0 auto;
 }
 td {
-	border: 5px solid green;	
-	padding: 30px;
-	background: orange;
-	align-items: center;	
-}
-td:nth-child(odd) {
-	border: 5px solid orange;	
-	padding: 30px;
+	width: 100px;
+	height: 100px;
 	background: green;
-	align-items: center;
+	border: 3px solid red;
 }
-div:nth-of-type {
+
+div	{
 	width: 50px;
 	height: 50px;
+	background: red;
+	margin: 0 auto;
+}
+
+td:nth-of-type(even) {
+	background: red;
+}
+td:nth-of-type(even) div {
 	background: green;
-}	
-div:nth-of-type(odd) {
-	width: 50px;
-	height: 50px;
-	background: orange;
+}
+tr:nth-of-type(even) td:nth-of-type(odd) {
+	background: red;
+}
+tr:nth-of-type(even) td:nth-of-type(odd) div {
+	background: green;
+}
+tr:nth-of-type(even) td:nth-of-type(even) {
+	background: green;
+}
+tr:nth-of-type(even) td:nth-of-type(even) div {
+	background: red;
 }
